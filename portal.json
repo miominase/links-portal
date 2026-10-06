@@ -3,12 +3,28 @@
   "page_title": "Links",
   "tiles": [
     {
-      "id": "cp-ichiban-shibori-zero",
-      "url": "https://cp.kirin.jp/join/37920",
+      "id": "cp-harekaze",
+      "url": "https://sns.petit.gift/campaigns/CE34c87M/Fc6QibZbXwfFrLSzs87k26QSb0UQdrcn",
       "image": "",
-      "title": "一番搾りゼロ",
+      "title": "晴れ風",
       "date": "",
       "order": 1
+    },
+    {
+      "id": "cp-ichiban-shibori-38315",
+      "url": "https://cp.kirin.jp/join/38315",
+      "image": "",
+      "title": "一番搾り",
+      "date": "",
+      "order": 2
+    },
+    {
+      "id": "cp-kinmugi",
+      "url": "https://kinmugi-cvs.campaign.suntory.co.jp/",
+      "image": "",
+      "title": "金麦",
+      "date": "",
+      "order": 3
     }
   ]
 }
