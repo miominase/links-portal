@@ -1,0 +1,128 @@
+:root {
+  --bg: #f4f1ea;
+  --ink: #23201b;
+  --muted: #6f685d;
+  --tile: #ffffff;
+  --tile-edge: #e2dccf;
+  --art-a: #f3c96b;
+  --art-b: #e9875c;
+  --field-bg: rgba(255, 255, 255, 0.92);
+  --field-edge: rgba(35, 32, 27, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17150f;
+    --ink: #f1ece2;
+    --muted: #a59d8f;
+    --tile: #24211a;
+    --tile-edge: #3a352b;
+    --art-a: #8a6a26;
+    --art-b: #7a3f27;
+    --field-bg: rgba(23, 21, 15, 0.88);
+    --field-edge: rgba(241, 236, 226, 0.22);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+.page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.page-head h1 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.tiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* One square per campaign. The link fills the whole square; the two
+   display fields sit on the top part only and let taps pass through. */
+.tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--tile);
+  border: 1px solid var(--tile-edge);
+}
+
+.tile-link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tile-link img,
+.tile-art {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tile-art {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, var(--art-a), var(--art-b));
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.tile-link:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: -3px;
+}
+
+.tile-fields {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: none; /* display only: taps go to the link underneath */
+}
+
+.field {
+  width: 100%;
+  margin: 0;
+  padding: 4px 8px;
+  border: 1px solid var(--field-edge);
+  border-radius: 8px;
+  background: var(--field-bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.field-title { font-weight: 700; }
+.field-date { font-size: 12px; color: var(--muted); }
