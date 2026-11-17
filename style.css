@@ -1,27 +1,16 @@
+/* lit.link と同じ並び（大きいカード3列＋小さいリンク4列）を、ポータルAPKと同じ濃紺・金・二重枠で。
+   自動操作のため: 読み込み後に位置が動かないよう、画像は縦横を固定し、遅延読み込みも動きもつけない。 */
 :root {
-  --bg: #f4f1ea;
-  --ink: #23201b;
-  --muted: #6f685d;
-  --tile: #ffffff;
-  --tile-edge: #e2dccf;
-  --art-a: #f3c96b;
-  --art-b: #e9875c;
-  --field-bg: rgba(255, 255, 255, 0.92);
-  --field-edge: rgba(35, 32, 27, 0.18);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #17150f;
-    --ink: #f1ece2;
-    --muted: #a59d8f;
-    --tile: #24211a;
-    --tile-edge: #3a352b;
-    --art-a: #8a6a26;
-    --art-b: #7a3f27;
-    --field-bg: rgba(23, 21, 15, 0.88);
-    --field-edge: rgba(241, 236, 226, 0.22);
-  }
+  color-scheme: dark;
+  --bg: #0a1330;
+  --paper: #111f46;
+  --ink: #f4f3ed;
+  --muted: #bac5e1;
+  --gold: #f1d48a;
+  --line: #d4dcf1;
+  --shadow: #030918;
+  --rule: #3a4a78;
+  --pixel: 'DotGothic16', monospace;
 }
 
 * { box-sizing: border-box; }
@@ -33,96 +22,168 @@ html, body {
   font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
 }
 
+body.has-bg {
+  background: linear-gradient(rgb(10 19 48 / 0.72), rgb(10 19 48 / 0.72)), var(--bg-image) center / cover fixed, var(--bg);
+}
+
+[hidden] { display: none !important; }
+
 .page {
   max-width: 520px;
   margin: 0 auto;
-  padding: 24px 16px 48px;
+  padding: 16px 12px 40px;
 }
 
-.page-head h1 {
-  margin: 0 0 20px;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-align: center;
+/* 名前とアイコン */
+.page-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 4px 0 14px;
 }
 
-.tiles {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-/* One square per campaign. The link fills the whole square; the two
-   display fields sit on the top part only and let taps pass through. */
-.tile {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  border-radius: 14px;
-  overflow: hidden;
-  background: var(--tile);
-  border: 1px solid var(--tile-edge);
-}
-
-.tile-link {
-  position: absolute;
-  inset: 0;
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-.tile-link img,
-.tile-art {
-  width: 100%;
-  height: 100%;
-  display: block;
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
   object-fit: cover;
 }
 
-.tile-art {
+.name {
+  margin: 0;
+  font-family: var(--pixel);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
+/* 区切りの見出し */
+.sec + .sec { margin-top: 18px; }
+
+.sec-title {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 10px 12px;
-  background: linear-gradient(135deg, var(--art-a), var(--art-b));
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 12px;
-  font-weight: 600;
+  align-items: center;
+  gap: 8px;
+  margin: 0 2px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.sec-title::after {
+  content: "";
+  flex: 1;
+  border-top: 1px dashed var(--rule);
+}
+
+.list-cards, .list-icons, .list-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* 丸（3列・4列）。押せる範囲は升目いっぱいの箱、見た目は丸＋絵、その下に名前、日付（あるときだけ）。 */
+.list-cards, .list-icons {
+  display: grid;
+  gap: 12px 6px;
+}
+
+.list-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.list-icons { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.item-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 4px 2px 6px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.item-link:active { background: rgb(241 212 138 / 0.12); }
+
+.orb {
+  display: grid;
+  place-items: center;
+  width: 82%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 4px double var(--line);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #2a4a90, var(--paper) 72%);
+  box-shadow: 3px 3px var(--shadow);
+}
+
+.list-icons .orb { width: 86%; }
+
+.orb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.orb-letter {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.item-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
   overflow-wrap: anywhere;
 }
 
-.tile-link:focus-visible {
-  outline: 3px solid var(--ink);
-  outline-offset: -3px;
+.list-icons .item-title {
+  font-size: 11px;
+  font-weight: 400;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
 
-.tile-fields {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
+.item-date {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* 横長のボタン（1列） */
+.list-buttons {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  pointer-events: none; /* display only: taps go to the link underneath */
+  gap: 8px;
 }
 
-.field {
-  width: 100%;
-  margin: 0;
-  padding: 4px 8px;
-  border: 1px solid var(--field-edge);
-  border-radius: 8px;
-  background: var(--field-bg);
-  color: var(--ink);
-  font: inherit;
-  font-size: 13px;
-  line-height: 1.3;
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px 12px;
+  border: 4px double var(--line);
+  border-radius: 3px;
+  background: var(--paper);
+  box-shadow: 3px 3px var(--shadow);
 }
 
-.field-title { font-weight: 700; }
-.field-date { font-size: 12px; color: var(--muted); }
+.button-title { font-weight: 700; font-size: 14px; }
+.button-date { font-size: 11px; color: var(--muted); }

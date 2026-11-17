@@ -1,54 +1,148 @@
 <!doctype html>
 <html lang="ja">
 <head>
+<!--
+Copyright 2020 The DotGothic16 Project Authors (https://github.com/fontworks-fonts/DotGothic16)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting — in part or in whole — any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Links</title>
+<style>
+@font-face{font-family:'DotGothic16';font-style:normal;font-weight:400;font-display:swap;src:url(data:font/ttf;base64,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) format('truetype')}
+</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="page">
-  <header class="page-head">
-    <h1>Links</h1>
-  </header>
-  <ul class="tiles" id="tiles">
-    <li class="tile">
-      <a class="tile-link" id="cp-harekaze" aria-label="cp-harekaze" href="https://sns.petit.gift/campaigns/CE34c87M/Fc6QibZbXwfFrLSzs87k26QSb0UQdrcn" rel="noopener"><span class="tile-art">sns.petit.gift</span></a>
-      <div class="tile-fields">
-        <input class="field field-title" type="text" value="晴れ風" readonly tabindex="-1" aria-label="リンクの名前">
-        <input class="field field-date" type="text" value="" readonly tabindex="-1" aria-label="日付">
-      </div>
-    </li>
-    <li class="tile">
-      <a class="tile-link" id="cp-ichiban-shibori-38315" aria-label="cp-ichiban-shibori-38315" href="https://cp.kirin.jp/join/38315" rel="noopener"><span class="tile-art">cp.kirin.jp</span></a>
-      <div class="tile-fields">
-        <input class="field field-title" type="text" value="一番搾り" readonly tabindex="-1" aria-label="リンクの名前">
-        <input class="field field-date" type="text" value="" readonly tabindex="-1" aria-label="日付">
-      </div>
-    </li>
-    <li class="tile">
-      <a class="tile-link" id="cp-kinmugi" aria-label="cp-kinmugi" href="https://kinmugi-cvs.campaign.suntory.co.jp/" rel="noopener"><span class="tile-art">kinmugi-cvs.campaign.suntory.co.jp</span></a>
-      <div class="tile-fields">
-        <input class="field field-title" type="text" value="金麦" readonly tabindex="-1" aria-label="リンクの名前">
-        <input class="field field-date" type="text" value="" readonly tabindex="-1" aria-label="日付">
-      </div>
-    </li>
-    <li class="tile">
-      <a class="tile-link" id="cp-draw8-clearasahi" aria-label="cp-draw8-clearasahi" href="https://newclearasahi202610-campaign-liff.belugacpn.jp/" rel="noopener"><span class="tile-art">newclearasahi202610-campaign-liff.belugacpn.jp</span></a>
-      <div class="tile-fields">
-        <input class="field field-title" type="text" value="⑧クリアアサヒ" readonly tabindex="-1" aria-label="リンクの名前">
-        <input class="field field-date" type="text" value="" readonly tabindex="-1" aria-label="日付">
-      </div>
-    </li>
-    <li class="tile">
-      <a class="tile-link" id="cp-draw3-honkirin" aria-label="cp-draw3-honkirin" href="https://cp.kirin.jp/lot/38609" rel="noopener"><span class="tile-art">cp.kirin.jp</span></a>
-      <div class="tile-fields">
-        <input class="field field-title" type="text" value="③本麒麟" readonly tabindex="-1" aria-label="リンクの名前">
-        <input class="field field-date" type="text" value="" readonly tabindex="-1" aria-label="日付">
-      </div>
-    </li>
+<header class="page-head"><h1 class="name">19991122</h1></header>
+<section class="sec sec-cards">
+  <h2 class="sec-title">抽選キャンペーン</h2>
+  <ul class="list-cards">
+    <li class="item" data-end="2026-12-01"><a class="item-link" id="cp-draw1-bitterist" href="https://www.asahibeer-cp.jp/brand/bitter-ist/cp/261111-261124-4k8513ti51/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0048.png" alt="" width="96" height="96"></span><span class="item-title">①ビタリスト</span><span class="item-date">11/24</span></a></li>
+    <li class="item" data-end="2026-11-30"><a class="item-link" id="cp-draw2-harekaze" href="https://t.co/CzPU4Dx500" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0486.png" alt="" width="96" height="96"></span><span class="item-title">②晴れ風10万</span><span class="item-date">11/23</span></a></li>
+    <li class="item" data-end="2026-11-17"><a class="item-link" id="cp-draw3-honkirin" href="https://cp.kirin.jp/lot/38609" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0197.png" alt="" width="96" height="96"></span><span class="item-title">③本麒麟350ml</span><span class="item-date">11/10</span></a></li>
+    <li class="item" data-end="2026-11-23"><a class="item-link" id="cp-draw4-greenlabel" href="https://cp.kirin.jp/join/38683" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0891.png" alt="" width="96" height="96"></span><span class="item-title">④淡麗グリーンラベル</span><span class="item-date">11/16</span></a></li>
+    <li class="item" data-end="2026-11-17"><a class="item-link" id="cp-draw8-clearasahi" href="https://newclearasahi202610-campaign-liff.belugacpn.jp/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0986.png" alt="" width="96" height="96"></span><span class="item-title">⑧クリアアサヒ</span><span class="item-date">11/10</span></a></li>
+    <li class="item"><a class="item-link" id="cp-jt" href="https://www.clubjt.jp/members/events/202611-lawson-mevius-campaign/plans/01/confirm/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0921.png" alt="" width="96" height="96"></span><span class="item-title">JT</span></a></li>
   </ul>
+</section>
+<section class="sec sec-icons">
+  <h2 class="sec-title">そのほか</h2>
+  <ul class="list-icons">
+    <li class="item"><a class="item-link" id="cp-lawson-aquarius" href="https://zko.jp/q/ny5ko2" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0629.png" alt="" width="96" height="96"></span><span class="item-title">ロ）アクエリ</span></a></li>
+    <li class="item"><a class="item-link" id="cp-lawson-mugicha" href="https://c.cocacola.co.jp/yakan/2604/01ak/?utm_source=packaging_o&amp;utm_medium=OOH&amp;utm_campaign=YKN2026Spring&amp;utm_term=normal_bottle&amp;utm_content=qr" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-1006.png" alt="" width="96" height="96"></span><span class="item-title">ロ）麦茶</span></a></li>
+    <li class="item"><a class="item-link" id="cp-lawson-georgia" href="http://zko.jp/sdmezy" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0925.png" alt="" width="96" height="96"></span><span class="item-title">ロ）ジョージア</span></a></li>
+    <li class="item"><a class="item-link" id="cp-cocacola-10yen" href="https://c.cocacola.co.jp/mmaid/qr/dp2026/f-6tur/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0186.png" alt="" width="96" height="96"></span><span class="item-title">10円</span></a></li>
+    <li class="item"><a class="item-link" id="cp-minutemaid" href="https://c.cocacola.co.jp/spn/mmaid/cp/2026juice/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0731.png" alt="" width="96" height="96"></span><span class="item-title">ミニッツメイド</span></a></li>
+    <li class="item"><a class="item-link" id="cp-mugicha" href="https://c.cocacola.co.jp/yakan/2604/01ak/?utm_source=packaging_o&amp;utm_medium=OOH&amp;utm_campaign=YKN2026Spring&amp;utm_term=normal_bottle&amp;utm_content=qr" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0522.png" alt="" width="96" height="96"></span><span class="item-title">麦茶</span></a></li>
+    <li class="item"><a class="item-link" id="cp-kochakaden" href="https://c.cocacola.co.jp/spn/kochakaden/cp2026spring/" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0076.png" alt="" width="96" height="96"></span><span class="item-title">紅茶花伝</span></a></li>
+    <li class="item"><a class="item-link" id="cp-tokucha" href="https://line.me/R/app/1627004575-1vmywyLx?type=app&amp;b=1898&amp;v=20825&amp;ref_vending_machine=done&amp;cp=1#~" rel="noopener"><span class="orb"><img class="orb-img" src="img/poke-0875.png" alt="" width="96" height="96"></span><span class="item-title">特茶</span></a></li>
+  </ul>
+</section>
 </main>
+<script>
+/* 締切（data-end）を過ぎたものを、最初に描く前に隠す。端末の日付で判定する。 */
+(function () {
+  var d = new Date(), p = function (n) { return (n < 10 ? "0" : "") + n; };
+  var today = d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+  var items = document.querySelectorAll("[data-end]");
+  for (var i = 0; i < items.length; i++) if (items[i].getAttribute("data-end") < today) items[i].hidden = true;
+  var secs = document.querySelectorAll(".sec");
+  for (var j = 0; j < secs.length; j++) if (!secs[j].querySelector("li:not([hidden])")) secs[j].hidden = true;
+})();
+</script>
 </body>
 </html>

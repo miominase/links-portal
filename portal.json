@@ -1,46 +1,175 @@
 {
-  "version": 1,
+  "version": 2,
   "page_title": "Links",
+  "name": "19991122",
+  "avatar": "",
+  "background": "",
+  "sections": [
+    {
+      "key": "cp",
+      "title": "抽選キャンペーン",
+      "style": "cards"
+    },
+    {
+      "key": "etc",
+      "title": "そのほか",
+      "style": "icons"
+    }
+  ],
   "tiles": [
     {
-      "id": "cp-harekaze",
-      "url": "https://sns.petit.gift/campaigns/CE34c87M/Fc6QibZbXwfFrLSzs87k26QSb0UQdrcn",
-      "image": "",
-      "title": "晴れ風",
-      "date": "",
+      "id": "cp-draw1-bitterist",
+      "url": "https://www.asahibeer-cp.jp/brand/bitter-ist/cp/261111-261124-4k8513ti51/",
+      "image": "img/poke-0048.png",
+      "title": "①ビタリスト",
+      "date": "11/24",
+      "end": "2026-12-01",
+      "section": "cp",
+      "hidden": false,
       "order": 1
     },
     {
-      "id": "cp-ichiban-shibori-38315",
-      "url": "https://cp.kirin.jp/join/38315",
-      "image": "",
-      "title": "一番搾り",
-      "date": "",
+      "id": "cp-draw2-harekaze",
+      "url": "https://t.co/CzPU4Dx500",
+      "image": "img/poke-0486.png",
+      "title": "②晴れ風10万",
+      "date": "11/23",
+      "end": "2026-11-30",
+      "section": "cp",
+      "hidden": false,
       "order": 2
-    },
-    {
-      "id": "cp-kinmugi",
-      "url": "https://kinmugi-cvs.campaign.suntory.co.jp/",
-      "image": "",
-      "title": "金麦",
-      "date": "",
-      "order": 3
-    },
-    {
-      "id": "cp-draw8-clearasahi",
-      "url": "https://newclearasahi202610-campaign-liff.belugacpn.jp/",
-      "image": "",
-      "title": "⑧クリアアサヒ",
-      "date": "",
-      "order": 4
     },
     {
       "id": "cp-draw3-honkirin",
       "url": "https://cp.kirin.jp/lot/38609",
-      "image": "",
-      "title": "③本麒麟",
-      "date": "",
+      "image": "img/poke-0197.png",
+      "title": "③本麒麟350ml",
+      "date": "11/10",
+      "end": "2026-11-17",
+      "section": "cp",
+      "hidden": false,
+      "order": 3
+    },
+    {
+      "id": "cp-draw4-greenlabel",
+      "url": "https://cp.kirin.jp/join/38683",
+      "image": "img/poke-0891.png",
+      "title": "④淡麗グリーンラベル",
+      "date": "11/16",
+      "end": "2026-11-23",
+      "section": "cp",
+      "hidden": false,
+      "order": 4
+    },
+    {
+      "id": "cp-draw8-clearasahi",
+      "url": "https://newclearasahi202610-campaign-liff.belugacpn.jp/",
+      "image": "img/poke-0986.png",
+      "title": "⑧クリアアサヒ",
+      "date": "11/10",
+      "end": "2026-11-17",
+      "section": "cp",
+      "hidden": false,
       "order": 5
+    },
+    {
+      "id": "cp-jt",
+      "url": "https://www.clubjt.jp/members/events/202611-lawson-mevius-campaign/plans/01/confirm/",
+      "image": "img/poke-0921.png",
+      "title": "JT",
+      "date": "",
+      "end": "",
+      "section": "cp",
+      "hidden": false,
+      "order": 6
+    },
+    {
+      "id": "cp-lawson-aquarius",
+      "url": "https://zko.jp/q/ny5ko2",
+      "image": "img/poke-0629.png",
+      "title": "ロ）アクエリ",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 1
+    },
+    {
+      "id": "cp-lawson-mugicha",
+      "url": "https://c.cocacola.co.jp/yakan/2604/01ak/?utm_source=packaging_o&utm_medium=OOH&utm_campaign=YKN2026Spring&utm_term=normal_bottle&utm_content=qr",
+      "image": "img/poke-1006.png",
+      "title": "ロ）麦茶",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 2
+    },
+    {
+      "id": "cp-lawson-georgia",
+      "url": "http://zko.jp/sdmezy",
+      "image": "img/poke-0925.png",
+      "title": "ロ）ジョージア",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 3
+    },
+    {
+      "id": "cp-cocacola-10yen",
+      "url": "https://c.cocacola.co.jp/mmaid/qr/dp2026/f-6tur/",
+      "image": "img/poke-0186.png",
+      "title": "10円",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 4
+    },
+    {
+      "id": "cp-minutemaid",
+      "url": "https://c.cocacola.co.jp/spn/mmaid/cp/2026juice/",
+      "image": "img/poke-0731.png",
+      "title": "ミニッツメイド",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 5
+    },
+    {
+      "id": "cp-mugicha",
+      "url": "https://c.cocacola.co.jp/yakan/2604/01ak/?utm_source=packaging_o&utm_medium=OOH&utm_campaign=YKN2026Spring&utm_term=normal_bottle&utm_content=qr",
+      "image": "img/poke-0522.png",
+      "title": "麦茶",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 6
+    },
+    {
+      "id": "cp-kochakaden",
+      "url": "https://c.cocacola.co.jp/spn/kochakaden/cp2026spring/",
+      "image": "img/poke-0076.png",
+      "title": "紅茶花伝",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 7
+    },
+    {
+      "id": "cp-tokucha",
+      "url": "https://line.me/R/app/1627004575-1vmywyLx?type=app&b=1898&v=20825&ref_vending_machine=done&cp=1#~",
+      "image": "img/poke-0875.png",
+      "title": "特茶",
+      "date": "",
+      "end": "",
+      "section": "etc",
+      "hidden": false,
+      "order": 8
     }
   ]
 }
