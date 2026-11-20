@@ -58,7 +58,7 @@
       "date": "11/16",
       "end": "2026-11-23",
       "section": "cp",
-      "hidden": false,
+      "hidden": true,
       "order": 4
     },
     {
@@ -69,7 +69,7 @@
       "date": "11/10",
       "end": "2026-11-17",
       "section": "cp",
-      "hidden": false,
+      "hidden": true,
       "order": 5
     },
     {
@@ -81,7 +81,7 @@
       "end": "",
       "section": "cp",
       "hidden": false,
-      "order": 6
+      "order": 7
     },
     {
       "id": "cp-lawson-aquarius",
@@ -170,6 +170,17 @@
       "section": "etc",
       "hidden": false,
       "order": 8
+    },
+    {
+      "id": "cp-kb-ga2611-spexperts",
+      "url": "https://kb-ga2611.spexperts.jp",
+      "image": "img/poke-0902.png",
+      "title": "③グッドエール",
+      "date": "",
+      "end": "2026-12-04",
+      "section": "cp",
+      "hidden": false,
+      "order": 6
     }
   ]
 }
