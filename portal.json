@@ -26,7 +26,7 @@
       "end": "2026-12-01",
       "section": "cp",
       "hidden": false,
-      "order": 1
+      "order": 2
     },
     {
       "id": "cp-draw2-harekaze",
@@ -37,7 +37,7 @@
       "end": "2026-11-30",
       "section": "cp",
       "hidden": false,
-      "order": 2
+      "order": 3
     },
     {
       "id": "cp-draw3-honkirin",
@@ -48,7 +48,7 @@
       "end": "2026-11-17",
       "section": "cp",
       "hidden": false,
-      "order": 3
+      "order": 4
     },
     {
       "id": "cp-draw4-greenlabel",
@@ -59,7 +59,7 @@
       "end": "2026-11-23",
       "section": "cp",
       "hidden": true,
-      "order": 4
+      "order": 5
     },
     {
       "id": "cp-draw8-clearasahi",
@@ -70,7 +70,7 @@
       "end": "2026-11-17",
       "section": "cp",
       "hidden": true,
-      "order": 5
+      "order": 6
     },
     {
       "id": "cp-jt",
@@ -81,7 +81,7 @@
       "end": "",
       "section": "cp",
       "hidden": false,
-      "order": 7
+      "order": 8
     },
     {
       "id": "cp-lawson-aquarius",
@@ -180,7 +180,18 @@
       "end": "2026-12-04",
       "section": "cp",
       "hidden": true,
-      "order": 6
+      "order": 7
+    },
+    {
+      "id": "cp-draw9-asahizero",
+      "url": "https://www.asahibeer-cp.jp/asahizero/cp/261124-261207-jh2OakwSaf/",
+      "image": "img/poke-0461.png",
+      "title": "⑨アサヒゼロ",
+      "date": "11/24",
+      "end": "2026-12-14",
+      "section": "cp",
+      "hidden": false,
+      "order": 1
     }
   ]
 }
