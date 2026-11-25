@@ -192,6 +192,17 @@
       "section": "cp",
       "hidden": false,
       "order": 1
+    },
+    {
+      "id": "cp-line-me",
+      "url": "https://line.me/R/ti/p/%40kbg4929v",
+      "image": "img/poke-0628.png",
+      "title": "ちいかわ",
+      "date": "",
+      "end": "2026-12-02",
+      "section": "cp",
+      "hidden": false,
+      "order": 9
     }
   ]
 }
