@@ -203,6 +203,17 @@
       "section": "cp",
       "hidden": false,
       "order": 9
+    },
+    {
+      "id": "cp-shop-kurasushi",
+      "url": "https://shop.kurasushi.co.jp/tokyo?ward=adachi&keyword=%E6%9D%B1%E4%BA%AC%E9%83%BD",
+      "image": "img/poke-0630.png",
+      "title": "足立区ちいかわ",
+      "date": "",
+      "end": "2026-12-02",
+      "section": "cp",
+      "hidden": false,
+      "order": 10
     }
   ]
 }
