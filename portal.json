@@ -25,7 +25,7 @@
       "date": "11/24",
       "end": "2026-12-01",
       "section": "cp",
-      "hidden": false,
+      "hidden": true,
       "order": 2
     },
     {
@@ -36,7 +36,7 @@
       "date": "11/23",
       "end": "2026-11-30",
       "section": "cp",
-      "hidden": false,
+      "hidden": true,
       "order": 3
     },
     {
@@ -47,7 +47,7 @@
       "date": "11/10",
       "end": "2026-11-17",
       "section": "cp",
-      "hidden": false,
+      "hidden": true,
       "order": 4
     },
     {
@@ -71,17 +71,6 @@
       "section": "cp",
       "hidden": true,
       "order": 6
-    },
-    {
-      "id": "cp-jt",
-      "url": "https://www.clubjt.jp/members/events/202611-lawson-mevius-campaign/plans/01/confirm/",
-      "image": "img/poke-0921.png",
-      "title": "JT",
-      "date": "",
-      "end": "",
-      "section": "cp",
-      "hidden": false,
-      "order": 8
     },
     {
       "id": "cp-lawson-aquarius",
@@ -194,17 +183,6 @@
       "order": 1
     },
     {
-      "id": "cp-line-me",
-      "url": "https://line.me/R/ti/p/%40kbg4929v",
-      "image": "img/poke-0628.png",
-      "title": "ちいかわ",
-      "date": "",
-      "end": "2026-12-02",
-      "section": "cp",
-      "hidden": false,
-      "order": 9
-    },
-    {
       "id": "cp-shop-kurasushi",
       "url": "https://shop.kurasushi.co.jp/tokyo?ward=adachi&keyword=%E6%9D%B1%E4%BA%AC%E9%83%BD",
       "image": "img/poke-0630.png",
@@ -213,7 +191,18 @@
       "end": "2026-12-02",
       "section": "cp",
       "hidden": false,
-      "order": 10
+      "order": 9
+    },
+    {
+      "id": "cp-sns-petit",
+      "url": "https://sns.petit.gift/campaigns/Ft4GUJy3/Yy38lTVJec0Oku921c9o8JEL7bR7VHZ6",
+      "image": "img/poke-0267.png",
+      "title": "グッドエール",
+      "date": "",
+      "end": "2026-12-03",
+      "section": "cp",
+      "hidden": false,
+      "order": 8
     }
   ]
 }
